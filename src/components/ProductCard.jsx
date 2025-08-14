@@ -11,7 +11,7 @@ function   ProductCard({ProductData}) {
             <p>{ProductData.price}</p>
          </div>
             <p className="product-card-description"> {ProductData.description}</p>
-        <Button/>
+        <Button productData={ProductData} />
         </div> 
     )
 }

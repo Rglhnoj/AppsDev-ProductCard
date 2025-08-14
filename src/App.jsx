@@ -9,14 +9,14 @@ function App() {
     description: "High quality camera for photography enthusiasts"
    },
     
-   { image: "/laptop.jpeg",
+   { image: "/Laptop.jpeg",
     name: "laptop",
     price:  "$800",
     description:  "Powerful laptop for professionals and gamers"
    },
   
    {
-   image:"/Headset.jpg",
+   image:"/Headset.jpeg",
     name:   "Computer Headset",
     price:  "$600",
     description:  "Comfortable headset with noise cancellation for immersive sound"
@@ -44,8 +44,10 @@ function App() {
   ]
 
   return (
-      <div className='center-ui'>
-        <ProductCard ProductData={ProductData[0]} />
+       <div className='center-ui'>
+      {ProductData.map((product, index) => (
+        <ProductCard key={index} ProductData={product} />
+      ))}
     </div>
   )
 }
