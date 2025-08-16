@@ -3,7 +3,7 @@ import ProductCard from "./components/ProductCard";
 
 function App() {
   const ProductData = [
-   { image:"/camera.jpeg",
+   { image:"/Camera.jpeg",
     name: "Camera",
     price: "$100",
     description: "High quality camera for photography enthusiasts"

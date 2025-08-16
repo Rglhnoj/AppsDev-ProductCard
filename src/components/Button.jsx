@@ -5,7 +5,7 @@ export default function Button({ productData }) {
     }
 
     return (
-        <button className="cmp-button"    onClick={handleClick}>
+        <button className="cmp-button" onClick={handleClick}>
             Buy Now
         </button>
     );
